@@ -16,4 +16,7 @@ function updateTime() {
 
 }
 
-setInterval(updateTime, 1000);
+setInterval(() => {
+    updateTime();
+    document.querySelector(".colon").classList.toggle("hidden");
+}, 1000);
